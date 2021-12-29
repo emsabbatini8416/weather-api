@@ -16,3 +16,5 @@ fastify.listen(8080, function (err, address) {
   }
   fastify.log.info(`server listening on ${address}`);
 });
+
+module.exports = fastify;
