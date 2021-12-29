@@ -8,3 +8,12 @@ Simple API using Fastify
 3) Enter to repo root and run ``` npm install ```
 4) ``` npm run start ```
 5) Browser http:///localhost:8080/ping
+
+## Payload Request Example
+```
+{
+    "latitude": "-31.417",
+    "longitude": "-64.183",
+    "tempUpperTo": 15
+}
+```
