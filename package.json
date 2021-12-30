@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "jest test",
+    "test": "jest test --no-cache  --detectOpenHandles --runInBand --forceExit",
+    "coverage": "jest --collectCoverageFrom=test/**.js --coverage",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix"
   },
