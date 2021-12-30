@@ -1,7 +1,6 @@
 const fastify = require("../../src/index");
 
 describe("server test", () => {
-  
   afterEach(() => {
     fastify.close();
   });
