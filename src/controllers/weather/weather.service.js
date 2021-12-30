@@ -1,4 +1,4 @@
-const rp = require('request-promise');
+const rp = require("request-promise");
 
 exports.getWeatherByLatitudeAndLongitude = (lat, lon) => {
   const KEY = process.env.WEATHER_KEY;
@@ -7,6 +7,6 @@ exports.getWeatherByLatitudeAndLongitude = (lat, lon) => {
 
   return rp.get({
     url: `${API}?lat=${lat}&lon=${lon}&units=${UNITS}&appid=${KEY}`,
-    json: true
+    json: true,
   });
 };

@@ -11,7 +11,7 @@ const getWeatherByLatitudeAndLongitudeOpts = {
   handler: getWeatherByLatitudeAndLongitude,
 };
 
-async function routes(fastify, options) {
+async function routes(fastify) {
   fastify.post("/weather", getWeatherByLatitudeAndLongitudeOpts);
 }
 
